@@ -29,6 +29,12 @@ body
                border-radius: 50%
                background-color: #81807c
                box-shadow: -3px 0px 3px #636361
+               animation: spin 1s infinite linear
+               @keyframes spin
+                  0%
+                     transform: rotate(0deg)
+                  100%
+                     transform: rotate(720deg)
       .blackStripe
          position: absolute
          height: 10px
