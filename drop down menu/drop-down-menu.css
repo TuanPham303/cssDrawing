@@ -1,0 +1,348 @@
+div {
+	text-align: center;
+	margin-top: 100px;
+}
+ul {
+	list-style-type: none;
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+	background: rgb(185,72,76);
+	border-radius: 5px;
+}
+ul.drop-menu {
+	background: none;
+}
+li {
+	height: 65px;
+	width: 150px;
+	line-height: 65px;
+	float: left;
+	position: relative;	
+	text-transform: uppercase;
+	font-size: 14px;	
+	color: rgba(255,255,255,1);
+}
+li:hover {
+	background: #9F000F;
+}
+li:first-child:hover {
+	background: #9F000F;
+	border-radius: 5px 0 0 0;
+}
+li:last-child:hover {
+	border-radius: 0 5px 0 0;
+}
+ul.drop-menu {
+	position: absolute;
+	padding: 0;
+	width: 100%;
+	top: 100%;
+	left: 0%;
+}
+.drop-menu li {
+	background: #666;
+	color: rgba(255,255,255,1);
+}
+.drop-menu li:hover {
+	background: #606060;
+	border-radius: 0px;
+}
+.drop-menu li:last-child {
+	border-radius: 0 0 5px 5px;
+}
+
+/* hide menu */
+ul.drop-menu li {
+	display: none;
+}
+
+/* show menu */
+li:hover ul.drop-menu li {
+	display: block;
+}
+
+/* MENU1 */
+li:hover ul.drop-menu.menu-1 {
+	perspective: 1000px;
+}
+li:hover ul.drop-menu.menu-1 li {
+	opacity: 0;
+	animation-name: menu-1;
+	animation-duration: 300ms;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+	}
+li:hover ul.drop-menu.menu-1 li.menu1-1 {
+	opacity: 0;
+	animation-name: menu-1;
+	animation-duration: 300ms;
+	/* animation-delay: 150ms; */ /* to delay the animation */
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+	}
+li:hover ul.drop-menu.menu-1 li.menu1-2 {
+	opacity: 0;
+	animation-name: menu-1;
+	animation-duration: 600ms;
+	/* animation-delay: 450ms; */
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+	}
+li:hover ul.drop-menu.menu-1 li.menu1-3 {
+	opacity: 0;
+	animation-name: menu-1;
+	animation-duration: 900ms;
+	/* animation-delay: 750ms; */
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+	}
+li:hover ul.drop-menu.menu-1 li.menu1-4 {
+	opacity: 0;
+	animation-name: menu-1;
+	animation-duration: 1200ms;
+	/* animation-delay: 1050ms; */
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+	}			
+@keyframes menu-1 {
+	0% {
+		opacity: 0;
+		transform: rotateY(-90deg) translateY(30px);
+	}
+	100% {
+		opacity: 1;
+		transform: rotateY(0deg) translateY(0px);
+	}
+}
+
+/* MENU2 */
+li:hover ul.drop-menu.menu-2 {
+	perspective: 1000px;
+}
+li:hover ul.drop-menu.menu-2 li {
+	opacity: 0;
+	transform-origin: top center;
+	animation-name: menu-2;
+	animation-duration: 300ms;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+	}
+li:hover ul.drop-menu.menu-2 li.menu2-1 {
+	opacity: 0;
+	animation-name: menu-2;
+	animation-duration: 300ms;
+	/* animation-delay: 150ms; */
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+	}
+li:hover ul.drop-menu.menu-2 li.menu2-2 {
+	opacity: 0;
+	animation-name: menu-2;
+	animation-duration: 600ms;
+	/* animation-delay: 300ms; */
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+	}
+li:hover ul.drop-menu.menu-2 li.menu2-3 {
+	opacity: 0;
+	animation-name: menu-2;
+	animation-duration: 900ms;
+	/* animation-delay: 450ms; */
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+	}
+li:hover ul.drop-menu.menu-2 li.menu2-4 {
+	opacity: 0;
+	animation-name: menu-2;
+	animation-duration: 1200ms;
+	/* animation-delay: 600ms; */
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+	}			
+@keyframes menu-2 {
+	0% {
+		opacity: 0;
+		transform: rotateX(-90deg);
+	}
+	60% {
+		transform: rotateX(50deg);
+	}
+	100% {
+		opacity: 1;
+		transform: rotateX(0deg);
+	}
+}
+
+/* MENU3 */
+li:hover ul.drop-menu.menu-3 {
+	perspective: 1000px;
+}
+li:hover ul.drop-menu.menu-3 li {
+	opacity: 0;
+	animation-name: menu-3;
+	animation-duration: 300ms;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+	}
+li:hover ul.drop-menu.menu-3 li.menu3-1 {
+	opacity: 0;
+	animation-name: menu-3;
+	animation-duration: 300ms;
+	/* animation-delay: 150ms; */ /* to delay the animation */
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+	}
+li:hover ul.drop-menu.menu-3 li.menu3-2 {
+	opacity: 0;
+	animation-name: menu-3;
+	animation-duration: 600ms;
+	/* animation-delay: 450ms; */
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+	}
+li:hover ul.drop-menu.menu-3 li.menu3-3 {
+	opacity: 0;
+	animation-name: menu-3;
+	animation-duration: 900ms;
+	/* animation-delay: 750ms; */
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+	}
+li:hover ul.drop-menu.menu-3 li.menu3-4 {
+	opacity: 0;
+	animation-name: menu-3;
+	animation-duration: 1200ms;
+	/* animation-delay: 1050ms; */
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+	}			
+@keyframes menu-3 {
+	0% {
+		opacity: 0;
+		transform: scale(.2) translateY(60px);
+	}
+	80% {
+		transform: scale(1.2) translateY(30px);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1) translateY(0px);
+	}
+}
+
+/* MENU4 */
+li:hover ul.drop-menu.menu-4 {
+	perspective: 1000px;
+}
+li:hover ul.drop-menu.menu-4 li {
+	opacity: 0;
+	transform-origin: right center;
+	animation-name: menu-4;
+	animation-duration: 300ms;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+	}
+li:hover ul.drop-menu.menu-4 li.menu4-1 {
+	opacity: 0;
+	animation-name: menu-4;
+	animation-duration: 600ms;
+	/* animation-delay: 150ms; */ /* to delay the animation */
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+	}
+li:hover ul.drop-menu.menu-4 li.menu4-2 {
+	opacity: 0;
+	animation-name: menu-4;
+	animation-duration: 800ms;
+	/* animation-delay: 450ms; */
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+	}
+li:hover ul.drop-menu.menu-4 li.menu4-3 {
+	opacity: 0;
+	animation-name: menu-4;
+	animation-duration: 1000ms;
+	/* animation-delay: 750ms; */
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+	}
+li:hover ul.drop-menu.menu-4 li.menu4-4 {
+	opacity: 0;
+	animation-name: menu-4;
+	animation-duration: 1200ms;
+	/* animation-delay: 1050ms; */
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+	}			
+@keyframes menu-4 {
+	0% {
+		opacity: 0;
+		transform: rotateY(-90deg);
+	}
+	30% {
+		transform: rotateY(180deg);
+	}
+	70% {
+		transform: rotateY(270deg);	
+	}
+	100% {
+		opacity: 1;
+		transform: rotateY(360deg);
+	}
+}
+
+/* MENU5 */
+li:hover ul.drop-menu.menu-5 {
+	perspective: 1000px;
+}
+li:hover ul.drop-menu.menu-5 li {
+	opacity: 0;
+	transform-origin: right top;
+	animation-name: menu-5;
+	animation-duration: 300ms;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+	}
+li:hover ul.drop-menu.menu-5 li.menu5-1 {
+	opacity: 0;
+	animation-name: menu-5;
+	animation-duration: 600ms;
+	/* animation-delay: 150ms; */ /* to delay the animation */
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+	}
+li:hover ul.drop-menu.menu-5 li.menu5-2 {
+	opacity: 0;
+	animation-name: menu-5;
+	animation-duration: 800ms;
+	/* animation-delay: 450ms; */
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+	}
+li:hover ul.drop-menu.menu-5 li.menu5-3 {
+	opacity: 0;
+	animation-name: menu-5;
+	animation-duration: 1000ms;
+	/* animation-delay: 750ms; */
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+	}
+li:hover ul.drop-menu.menu-5 li.menu5-4 {
+	opacity: 0;
+	animation-name: menu-5;
+	animation-duration: 1200ms;
+	/* animation-delay: 1050ms; */
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+	}			
+@keyframes menu-5 {
+	0% {
+		opacity: 0;
+		transform: rotate(-45deg) translateX(30px);
+	}
+	100% {
+		opacity: 1;
+		transform: rotate(0deg) translateX(0px);
+	}
+}
